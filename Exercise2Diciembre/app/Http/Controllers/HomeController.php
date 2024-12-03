@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\estudiante;
+use App\Models\Curso;
+
 
 class HomeController extends Controller
 {
@@ -22,4 +24,21 @@ class HomeController extends Controller
         $listarEstudiantes = estudiante::all();
         return view('eliminarEs', compact('listarEstudiantes'));
     }
+
+    public function registrar_cursos_view() {
+        return view('cursos.registroCu');
+    }
+    public function ver_cursos_view() {
+        $listarCursos = Curso::all();
+        return view('cursos.verCursos', compact('listarCursos'));
+    }
+    public function editar_cursos_view() {
+        $listarCursos = Curso::all();
+        return view('cursos.modificarCu', compact('listarCursos'));
+    }
+    public function eliminar_cursos_view() {
+        $listarCursos = Curso::all();
+        return view('cursos.eliminarCu', compact('listarCursos'));
+    }
+
 }
