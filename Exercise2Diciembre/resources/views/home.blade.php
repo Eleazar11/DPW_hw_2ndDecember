@@ -23,7 +23,7 @@
         <!-- Botones de Cursos -->
         <h3 class="text-center mb-4">Gestión de Cursos</h3>
         <div class="d-flex justify-content-center gap-3">
-            <a class="btn btn-outline-primary" href="{{url('/registrar_curso_view')}}">Registrar Curso</a>
+            <a class="btn btn-outline-primary" href="{{url('/registrar_curso_view')}}">Regi strar Curso</a>
             <a class="btn btn-outline-success" href="{{ url('/ver_cursos_view') }}">Ver Cursos</a>
             <a class="btn btn-outline-warning" href="{{ url('/editar_cursos_view') }}">Modificar Cursos</a>
             <a class="btn btn-outline-danger" href="{{ url('/eliminar_cursos_view') }}">Eliminar Cursos</a>
